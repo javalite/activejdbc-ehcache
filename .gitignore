@@ -5,7 +5,7 @@ target/
 
 *.iml
 
-idea/*
+.idea/*
 
 
 # Package Files #
