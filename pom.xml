@@ -10,23 +10,26 @@
     <description>This module is a test for EHCache integration, do not add this
         as a dependency to your project</description>
 
+
+    <properties>
+        <javalite-version>2.3</javalite-version>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.3.2</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
-                    <meminitial>128m</meminitial>
-                    <maxmem>512m</maxmem>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
 
             <plugin>
                 <groupId>org.javalite</groupId>
                 <artifactId>activejdbc-instrumentation</artifactId>
-                <version>1.4.13</version>
+                <version>${javalite-version}</version>
                 <executions>
                     <execution>
                         <phase>process-classes</phase>
@@ -54,7 +57,7 @@
         <dependency>
             <groupId>org.javalite</groupId>
             <artifactId>activejdbc</artifactId>
-            <version>1.4.11</version>
+            <version>${javalite-version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>opensymphony</groupId>
