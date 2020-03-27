@@ -1,1 +1,2 @@
-# Example of ActiveJDBC configured to use EHCache
+# This reepository is deprecated. Alll examples have moved to [JavaLite Examples](https://github.com/javalite/javalite-examples) repo.
+
